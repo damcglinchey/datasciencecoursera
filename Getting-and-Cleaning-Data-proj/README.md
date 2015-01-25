@@ -50,4 +50,6 @@ In executing step 4 "Appropriately labels the data set with descriptive variable
 
 When naming the columns of the tidy data set produced in step 5, I have again chosen to maintain internal consistency. Here, the only change made to the column names is to pre-pend "mean." to each of the columns of the full data set from step 4. The 2 exceptions are "SubjectID" and "Activity" which remain unchanged from the previous data table.
 
+In the [CodeBook.md](CodeBook.md), I did not include any units on the measurement since I could not find any documentation in the original data and did not want to speculate.
+
 
