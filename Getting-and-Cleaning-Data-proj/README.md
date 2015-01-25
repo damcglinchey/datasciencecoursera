@@ -43,13 +43,13 @@ The tidy data set uploaded for the project can be read into R using:
 
 Many of the decisions I made in how to execute this project were geared towards maintaining continuity between the input data set we were given and the cleaned and summarized output.
 
-In executing step 2 "Extracts only the measurements on the mean and standard deviation for each measurement", I chose to only include variables where the mean() and std() were taken, according to `features_info.txt`. Therefore, I have not included variables using `meanFreq()` or any of those used in the `angle()` variables (gravityMean, tBodyAccMean, tBodyAccJerkMean, tBodyGyroMean, tBodyGyroJerkMean). In the absense of any further input from the "client", I thought this would be a cleaner and clearer process.
+In executing step 2 "Extracts only the measurements on the mean and standard deviation for each measurement", I chose to only include variables where the mean() and std() were taken, according to `features_info.txt`. Therefore, I have not included variables using `meanFreq()` or any of those used in the `angle()` variables (gravityMean, tBodyAccMean, tBodyAccJerkMean, tBodyGyroMean, tBodyGyroJerkMean). In the absence of any further input from the "client", I thought this would be a cleaner and clearer process.
 
 In executing step 3 "Uses descriptive activity names to name the activities in the data set", I have chosen to use the activity labels directly from `activity_labels.txt`. Again, I decided that this provided continuity between the data sets, and I found nothing lacking in the descriptiveness of the labels as given.
 
 In executing step 4 "Appropriately labels the data set with descriptive variable names", I have again tried to maintain continuity between the data sets. I have chosen to use the labels (almost) as given in `features.txt`. To conform to standards required for `select()`, I have replaced all `-` with `.` and removed the `()`. I think this maintains a balance between concise and descriptive column names. For instance, the leading "t" denotes time while the leading "f" denotes frequency, as described in `features_info.txt`. 
 
-When naming the columns of the tidy data set produced in step 5, I have again chosen to maintain internal consistency. Here, the only change made to the column names is to pre-pend "mean." to each of the columns of the full data set from step 4. The 2 exceptions are "SubjectID" and "Activity" which remain unchanged from the previous data table.
+When naming the columns of the tidy data set produced in step 5, I have again chosen to maintain internal consistency. Here, the only change made to the column names is to prepend "mean." to each of the columns of the full data set from step 4. The 2 exceptions are "SubjectID" and "Activity" which remain unchanged from the previous data table.
 
 In the [CodeBook.md](CodeBook.md), I did not include any units on the measurement since I could not find any documentation in the original data and did not want to speculate.
 
@@ -62,5 +62,5 @@ In the [CodeBook.md](CodeBook.md), I did not include any units on the measuremen
 5. `test_write <- read.table("proj3_step5_data.txt", header=TRUE)`
 6. `dim(test_write)` : `[1] 180  68`
 
-Note: I confirmed that the script produced identical output by clearing my R session, reperforming the above steps, and diffing the .txt file outputs. 
+Note: I confirmed that the script produced identical output by clearing my R session, re-performing the above steps, and diffing the .txt file outputs. 
 

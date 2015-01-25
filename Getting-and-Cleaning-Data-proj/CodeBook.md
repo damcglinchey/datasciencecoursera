@@ -8,7 +8,7 @@ The input data for this study can be found here: https://d396qusza40orc.cloudfro
 
 The above study contains a "test" and "train" sample of data on 128 variables from 30 subjects. Here both the test and train data sets are merged into one data sample.
 
-In the data sample a set of variables were estimated from each of the 33 processed signals. Each of the 33 processed signals are described later. Of the set of variables estimated from these signals included in the UCI HAR data, two were chosen. The `mean()` and `std()` of each signal was selected for each subject, activity, and datapoint.
+In the data sample a set of variables were estimated from each of the 33 processed signals. Each of the 33 processed signals are described later. Of the set of variables estimated from these signals included in the UCI HAR data, two were chosen. The `mean()` and `std()` of each signal was selected for each subject, activity, and data point.
 
 After obtaining this subset of the UCI HAR data, the average value of each of the 66 variables (33 signals for each mean and std) was computed for each activity performed by a subject. This gives a final sample of 6 activities x 30 subjects for each of 33 signals x 2 variables (66 by 180).
 
@@ -16,7 +16,7 @@ A description of the output data format and variables is defined below.
 
 ## Code book
 
-The study described above produces two data tables. The first, labelled "FullData" here, contains variables for each measurement recorded for each subject and activity. The second data table, labelled "SummaryData" here, contains the mean values of each variable in FullData calculated for each subject and activity.
+The study described above produces two data tables. The first, labeled "FullData" here, contains variables for each measurement recorded for each subject and activity. The second data table, labeled "SummaryData" here, contains the mean values of each variable in FullData calculated for each subject and activity.
 
 The below description of the signals is taken from `feautres_info.txt` included in the UCI HAR data.
 
