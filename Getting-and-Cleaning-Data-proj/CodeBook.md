@@ -102,71 +102,71 @@ The below description of the signals is taken from `feautres_info.txt` included 
 
 ### SummaryData
 
-"SubjectID" - ID of the subject, ranging from 1-30
-"Activity" - Name of the Activity (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
-"mean.tBodyAcc.mean.X"
-"mean.tBodyAcc.mean.Y"
-"mean.tBodyAcc.mean.Z"
-"mean.tGravityAcc.mean.X"
-"mean.tGravityAcc.mean.Y"
-"mean.tGravityAcc.mean.Z"
-"mean.tBodyAccJerk.mean.X"
-"mean.tBodyAccJerk.mean.Y"
-"mean.tBodyAccJerk.mean.Z"
-"mean.tBodyGyro.mean.X"
-"mean.tBodyGyro.mean.Y"
-"mean.tBodyGyro.mean.Z"
-"mean.tBodyGyroJerk.mean.X"
-"mean.tBodyGyroJerk.mean.Y"
-"mean.tBodyGyroJerk.mean.Z"
-"mean.tBodyAccMag.mean"
-"mean.tGravityAccMag.mean"
-"mean.tBodyAccJerkMag.mean"
-"mean.tBodyGyroMag.mean"
-"mean.tBodyGyroJerkMag.mean"
-"mean.fBodyAcc.mean.X"
-"mean.fBodyAcc.mean.Y"
-"mean.fBodyAcc.mean.Z"
-"mean.fBodyAccJerk.mean.X"
-"mean.fBodyAccJerk.mean.Y"
-"mean.fBodyAccJerk.mean.Z"
-"mean.fBodyGyro.mean.X"
-"mean.fBodyGyro.mean.Y"
-"mean.fBodyGyro.mean.Z"
-"mean.fBodyAccMag.mean"
-"mean.fBodyBodyAccJerkMag.mean"
-"mean.fBodyBodyGyroMag.mean"
-"mean.fBodyBodyGyroJerkMag.mean"
-"mean.tBodyAcc.std.X"
-"mean.tBodyAcc.std.Y"
-"mean.tBodyAcc.std.Z"
-"mean.tGravityAcc.std.X"
-"mean.tGravityAcc.std.Y"
-"mean.tGravityAcc.std.Z"
-"mean.tBodyAccJerk.std.X"
-"mean.tBodyAccJerk.std.Y"
-"mean.tBodyAccJerk.std.Z"
-"mean.tBodyGyro.std.X"
-"mean.tBodyGyro.std.Y"
-"mean.tBodyGyro.std.Z"
-"mean.tBodyGyroJerk.std.X"
-"mean.tBodyGyroJerk.std.Y"
-"mean.tBodyGyroJerk.std.Z"
-"mean.tBodyAccMag.std"
-"mean.tGravityAccMag.std"
-"mean.tBodyAccJerkMag.std"
-"mean.tBodyGyroMag.std"
-"mean.tBodyGyroJerkMag.std"
-"mean.fBodyAcc.std.X"
-"mean.fBodyAcc.std.Y"
-"mean.fBodyAcc.std.Z"
-"mean.fBodyAccJerk.std.X"
-"mean.fBodyAccJerk.std.Y"
-"mean.fBodyAccJerk.std.Z"
-"mean.fBodyGyro.std.X"
-"mean.fBodyGyro.std.Y"
-"mean.fBodyGyro.std.Z"
-"mean.fBodyAccMag.std"
-"mean.fBodyBodyAccJerkMag.std"
-"mean.fBodyBodyGyroMag.std"
-"mean.fBodyBodyGyroJerkMag.std" 
+- SubjectID: ID of the subject, ranging from 1-30
+- Activity: Name of the Activity (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
+- mean.tBodyAcc.mean.X:
+- mean.tBodyAcc.mean.Y:
+- mean.tBodyAcc.mean.Z:
+- mean.tGravityAcc.mean.X:
+- mean.tGravityAcc.mean.Y:
+- mean.tGravityAcc.mean.Z:
+- mean.tBodyAccJerk.mean.X:
+- mean.tBodyAccJerk.mean.Y:
+- mean.tBodyAccJerk.mean.Z:
+- mean.tBodyGyro.mean.X:
+- mean.tBodyGyro.mean.Y:
+- mean.tBodyGyro.mean.Z:
+- mean.tBodyGyroJerk.mean.X:
+- mean.tBodyGyroJerk.mean.Y:
+- mean.tBodyGyroJerk.mean.Z:
+- mean.tBodyAccMag.mean:
+- mean.tGravityAccMag.mean:
+- mean.tBodyAccJerkMag.mean:
+- mean.tBodyGyroMag.mean:
+- mean.tBodyGyroJerkMag.mean:
+- mean.fBodyAcc.mean.X:
+- mean.fBodyAcc.mean.Y:
+- mean.fBodyAcc.mean.Z:
+- mean.fBodyAccJerk.mean.X:
+- mean.fBodyAccJerk.mean.Y:
+- mean.fBodyAccJerk.mean.Z:
+- mean.fBodyGyro.mean.X:
+- mean.fBodyGyro.mean.Y:
+- mean.fBodyGyro.mean.Z:
+- mean.fBodyAccMag.mean:
+- mean.fBodyBodyAccJerkMag.mean:
+- mean.fBodyBodyGyroMag.mean:
+- mean.fBodyBodyGyroJerkMag.mean:
+- mean.tBodyAcc.std.X:
+- mean.tBodyAcc.std.Y:
+- mean.tBodyAcc.std.Z:
+- mean.tGravityAcc.std.X:
+- mean.tGravityAcc.std.Y:
+- mean.tGravityAcc.std.Z:
+- mean.tBodyAccJerk.std.X:
+- mean.tBodyAccJerk.std.Y:
+- mean.tBodyAccJerk.std.Z:
+- mean.tBodyGyro.std.X:
+- mean.tBodyGyro.std.Y:
+- mean.tBodyGyro.std.Z:
+- mean.tBodyGyroJerk.std.X:
+- mean.tBodyGyroJerk.std.Y:
+- mean.tBodyGyroJerk.std.Z:
+- mean.tBodyAccMag.std:
+- mean.tGravityAccMag.std:
+- mean.tBodyAccJerkMag.std:
+- mean.tBodyGyroMag.std:
+- mean.tBodyGyroJerkMag.std:
+- mean.fBodyAcc.std.X:
+- mean.fBodyAcc.std.Y:
+- mean.fBodyAcc.std.Z:
+- mean.fBodyAccJerk.std.X:
+- mean.fBodyAccJerk.std.Y:
+- mean.fBodyAccJerk.std.Z:
+- mean.fBodyGyro.std.X:
+- mean.fBodyGyro.std.Y:
+- mean.fBodyGyro.std.Z:
+- mean.fBodyAccMag.std:
+- mean.fBodyBodyAccJerkMag.std:
+- mean.fBodyBodyGyroMag.std:
+- mean.fBodyBodyGyroJerkMag.std":
