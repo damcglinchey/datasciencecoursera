@@ -29,144 +29,147 @@ The below description of the signals is taken from `feautres_info.txt` included 
  > These signals were used to estimate variables of the feature vector for each pattern:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
+Here "body" refers to results due to actions of the subject, rather than passive forces, such as gravity.
+
 ### FullData
 
 - SubjectID: ID of the subject, ranging from 1-3: 
 - Activity:  Name of the Activity (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) 
-- tBodyAcc.mean.X: 
-- tBodyAcc.mean.Y: 
-- tBodyAcc.mean.Z: 
-- tGravityAcc.mean.X: 
-- tGravityAcc.mean.Y: 
-- tGravityAcc.mean.Z: 
-- tBodyAccJerk.mean.X: 
-- tBodyAccJerk.mean.Y: 
-- tBodyAccJerk.mean.Z: 
-- tBodyGyro.mean.X: 
-- tBodyGyro.mean.Y: 
-- tBodyGyro.mean.Z: 
-- tBodyGyroJerk.mean.X: 
-- tBodyGyroJerk.mean.Y: 
-- tBodyGyroJerk.mean.Z: 
-- tBodyAccMag.mean: 
-- tGravityAccMag.mean: 
-- tBodyAccJerkMag.mean: 
-- tBodyGyroMag.mean: 
-- tBodyGyroJerkMag.mean: 
-- fBodyAcc.mean.X: 
-- fBodyAcc.mean.Y: 
-- fBodyAcc.mean.Z: 
-- fBodyAccJerk.mean.X: 
-- fBodyAccJerk.mean.Y: 
-- fBodyAccJerk.mean.Z: 
-- fBodyGyro.mean.X: 
-- fBodyGyro.mean.Y: 
-- fBodyGyro.mean.Z: 
-- fBodyAccMag.mean: 
-- fBodyBodyAccJerkMag.mean: 
-- fBodyBodyGyroMag.mean: 
-- fBodyBodyGyroJerkMag.mean: 
-- tBodyAcc.std.X: 
-- tBodyAcc.std.Y: 
-- tBodyAcc.std.Z: 
-- tGravityAcc.std.X: 
-- tGravityAcc.std.Y: 
-- tGravityAcc.std.Z: 
-- tBodyAccJerk.std.X: 
-- tBodyAccJerk.std.Y: 
-- tBodyAccJerk.std.Z: 
-- tBodyGyro.std.X: 
-- tBodyGyro.std.Y: 
-- tBodyGyro.std.Z: 
-- tBodyGyroJerk.std.X: 
-- tBodyGyroJerk.std.Y: 
-- tBodyGyroJerk.std.Z: 
-- tBodyAccMag.std: 
-- tGravityAccMag.std: 
-- tBodyAccJerkMag.std: 
-- tBodyGyroMag.std: 
-- tBodyGyroJerkMag.std: 
-- fBodyAcc.std.X: 
-- fBodyAcc.std.Y: 
-- fBodyAcc.std.Z: 
-- fBodyAccJerk.std.X: 
-- fBodyAccJerk.std.Y: 
-- fBodyAccJerk.std.Z: 
-- fBodyGyro.std.X: 
-- fBodyGyro.std.Y: 
-- fBodyGyro.std.Z: 
-- fBodyAccMag.std: 
-- fBodyBodyAccJerkMag.std: 
-- fBodyBodyGyroMag.std: 
-- fBodyBodyGyroJerkMag.std": 
+- tBodyAcc.mean.X: Mean of acceleration due to the body in the X direction over time
+- tBodyAcc.mean.Y: Mean of acceleration due to the body in the Y direction over time
+- tBodyAcc.mean.Z: Mean of the acceleration due to the body in the Z direction over time
+- tGravityAcc.mean.X: Mean of the acceleration due to gravity in the X direction over time
+- tGravityAcc.mean.Y: Mean of the acceleration due to gravity in the Y direction over time
+- tGravityAcc.mean.Z: Mean of the acceleration due to gravity in the Z direction over time 
+- tBodyAccJerk.mean.X: Mean of the jerk due to the body in the X direction over time 
+- tBodyAccJerk.mean.Y: Mean of the jerk due to the body in the Y direction over time
+- tBodyAccJerk.mean.Z: Mean of the jerk due to the body in the Z direction over time
+- tBodyGyro.mean.X: Mean of the angular acceleration due to the body in the X direction over time
+- tBodyGyro.mean.Y: Mean of the angular acceleration due to the body in the Y direction over time
+- tBodyGyro.mean.Z: Mean of the angular acceleration due to the body in the Z direction over time 
+- tBodyGyroJerk.mean.X: Mean of the angular jerk due to the body in the X direction over time
+- tBodyGyroJerk.mean.Y: Mean of the angular jerk due to the body in the Y direction over time
+- tBodyGyroJerk.mean.Z: Mean of the angular jerk due to the body in the Z direction over time
+- tBodyAccMag.mean: Mean of the magnitude of the acceleration vector due to the body over time
+- tGravityAccMag.mean: Mean of the magnitude of the acceleration vector due to gravity over time
+- tBodyAccJerkMag.mean: Mean of the magnitude of the jerk vector due to the body over time
+- tBodyGyroMag.mean: Mean of the magnitude of the angular acceleration vector due to the body over time
+- tBodyGyroJerkMag.mean: Mean of the magnitude of the angular jerk vector due to the body over time
+- fBodyAcc.mean.X: Mean of the frequency determined from a FFT of the acceleration due to the body in the X direction
+- fBodyAcc.mean.Y: Mean of the frequency determined from a FFT of the acceleration due to the body in the Y direction
+- fBodyAcc.mean.Z: Mean of the frequency determined from a FFT of the acceleration due to the body in the Z direction
+- fBodyAccJerk.mean.X: Mean of the frequency determined from a FFT of the jerk due to the body in the X direction
+- fBodyAccJerk.mean.Y: Mean of the frequency determined from a FFT of the jerk due to the body in the Y direction
+- fBodyAccJerk.mean.Z: Mean of the frequency determined from a FFT of the jerk due to the body in the Z direction
+- fBodyGyro.mean.X: Mean of the frequency determined from a FFT of the angular acceleration due to the body in the X direction
+- fBodyGyro.mean.Y: Mean of the frequency determined from a FFT of the angular acceleration due to the body in the Y direction
+- fBodyGyro.mean.Z: Mean of the frequency determined from a FFT of the angular acceleration due to the body in the Z direction
+- fBodyAccMag.mean: Mean of the frequency determined from a FFT of the magnitude of the acceleration vector due to the body
+- fBodyBodyAccJerkMag.mean: Mean of the frequency determined from a FFT of the magnitude of the jerk vector due to the body
+- fBodyBodyGyroMag.mean: Mean of the frequency determined from a FFT of the magnitude of the angular acceleration vector due to the body
+- fBodyBodyGyroJerkMag.mean: Mean of the frequency determined from a FFT of the magnitude of the angular jerk due to the body
+- tBodyAcc.std.X: Standard deviation of acceleration due to the body in the X direction over time
+- tBodyAcc.std.Y: Standard deviation of acceleration due to the body in the Y direction over time
+- tBodyAcc.std.Z: Standard deviation of the acceleration due to the body in the Z direction over time
+- tGravityAcc.std.X: Standard deviation of the acceleration due to gravity in the X direction over time
+- tGravityAcc.std.Y: Standard deviation of the acceleration due to gravity in the Y direction over time
+- tGravityAcc.std.Z: Standard deviation of the acceleration due to gravity in the Z direction over time 
+- tBodyAccJerk.std.X: Standard deviation of the jerk due to the body in the X direction over time 
+- tBodyAccJerk.std.Y: Standard deviation of the jerk due to the body in the Y direction over time
+- tBodyAccJerk.std.Z: Standard deviation of the jerk due to the body in the Z direction over time
+- tBodyGyro.std.X: Standard deviation of the angular acceleration due to the body in the X direction over time
+- tBodyGyro.std.Y: Standard deviation of the angular acceleration due to the body in the Y direction over time
+- tBodyGyro.std.Z: Standard deviation of the angular acceleration due to the body in the Z direction over time 
+- tBodyGyroJerk.std.X: Standard deviation of the angular jerk due to the body in the X direction over time
+- tBodyGyroJerk.std.Y: Standard deviation of the angular jerk due to the body in the Y direction over time
+- tBodyGyroJerk.std.Z: Standard deviation of the angular jerk due to the body in the Z direction over time
+- tBodyAccMag.std: Standard deviation of the magnitude of the acceleration vector due to the body over time
+- tGravityAccMag.std: Standard deviation of the magnitude of the acceleration vector due to gravity over time
+- tBodyAccJerkMag.std: Standard deviation of the magnitude of the jerk vector due to the body over time
+- tBodyGyroMag.std: Standard deviation of the magnitude of the angular acceleration vector due to the body over time
+- tBodyGyroJerkMag.std: Standard deviation of the magnitude of the angular jerk vector due to the body over time
+- fBodyAcc.std.X: Standard deviation of the frequency determined from a FFT of the acceleration due to the body in the X direction
+- fBodyAcc.std.Y: Standard deviation of the frequency determined from a FFT of the acceleration due to the body in the Y direction
+- fBodyAcc.std.Z: Standard deviation of the frequency determined from a FFT of the acceleration due to the body in the Z direction
+- fBodyAccJerk.std.X: Standard deviation of the frequency determined from a FFT of the jerk due to the body in the X direction
+- fBodyAccJerk.std.Y: Standard deviation of the frequency determined from a FFT of the jerk due to the body in the Y direction
+- fBodyAccJerk.std.Z: Standard deviation of the frequency determined from a FFT of the jerk due to the body in the Z direction
+- fBodyGyro.std.X: Standard deviation of the frequency determined from a FFT of the angular acceleration due to the body in the X direction
+- fBodyGyro.std.Y: Standard deviation of the frequency determined from a FFT of the angular acceleration due to the body in the Y direction
+- fBodyGyro.std.Z: Standard deviation of the frequency determined from a FFT of the angular acceleration due to the body in the Z direction
+- fBodyAccMag.std: Standard deviation of the frequency determined from a FFT of the magnitude of the acceleration vector due to the body
+- fBodyBodyAccJerkMag.std: Standard deviation of the frequency determined from a FFT of the magnitude of the jerk vector due to the body
+- fBodyBodyGyroMag.std: Standard deviation of the frequency determined from a FFT of the magnitude of the angular acceleration vector due to the body
+- fBodyBodyGyroJerkMag.std: Standard deviation of the frequency determined from a FFT of the magnitude of the angular jerk due to the body
+
 
 ### SummaryData
 
 - SubjectID: ID of the subject, ranging from 1-30
 - Activity: Name of the Activity (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
-- mean.tBodyAcc.mean.X:
-- mean.tBodyAcc.mean.Y:
-- mean.tBodyAcc.mean.Z:
-- mean.tGravityAcc.mean.X:
-- mean.tGravityAcc.mean.Y:
-- mean.tGravityAcc.mean.Z:
-- mean.tBodyAccJerk.mean.X:
-- mean.tBodyAccJerk.mean.Y:
-- mean.tBodyAccJerk.mean.Z:
-- mean.tBodyGyro.mean.X:
-- mean.tBodyGyro.mean.Y:
-- mean.tBodyGyro.mean.Z:
-- mean.tBodyGyroJerk.mean.X:
-- mean.tBodyGyroJerk.mean.Y:
-- mean.tBodyGyroJerk.mean.Z:
-- mean.tBodyAccMag.mean:
-- mean.tGravityAccMag.mean:
-- mean.tBodyAccJerkMag.mean:
-- mean.tBodyGyroMag.mean:
-- mean.tBodyGyroJerkMag.mean:
-- mean.fBodyAcc.mean.X:
-- mean.fBodyAcc.mean.Y:
-- mean.fBodyAcc.mean.Z:
-- mean.fBodyAccJerk.mean.X:
-- mean.fBodyAccJerk.mean.Y:
-- mean.fBodyAccJerk.mean.Z:
-- mean.fBodyGyro.mean.X:
-- mean.fBodyGyro.mean.Y:
-- mean.fBodyGyro.mean.Z:
-- mean.fBodyAccMag.mean:
-- mean.fBodyBodyAccJerkMag.mean:
-- mean.fBodyBodyGyroMag.mean:
-- mean.fBodyBodyGyroJerkMag.mean:
-- mean.tBodyAcc.std.X:
-- mean.tBodyAcc.std.Y:
-- mean.tBodyAcc.std.Z:
-- mean.tGravityAcc.std.X:
-- mean.tGravityAcc.std.Y:
-- mean.tGravityAcc.std.Z:
-- mean.tBodyAccJerk.std.X:
-- mean.tBodyAccJerk.std.Y:
-- mean.tBodyAccJerk.std.Z:
-- mean.tBodyGyro.std.X:
-- mean.tBodyGyro.std.Y:
-- mean.tBodyGyro.std.Z:
-- mean.tBodyGyroJerk.std.X:
-- mean.tBodyGyroJerk.std.Y:
-- mean.tBodyGyroJerk.std.Z:
-- mean.tBodyAccMag.std:
-- mean.tGravityAccMag.std:
-- mean.tBodyAccJerkMag.std:
-- mean.tBodyGyroMag.std:
-- mean.tBodyGyroJerkMag.std:
-- mean.fBodyAcc.std.X:
-- mean.fBodyAcc.std.Y:
-- mean.fBodyAcc.std.Z:
-- mean.fBodyAccJerk.std.X:
-- mean.fBodyAccJerk.std.Y:
-- mean.fBodyAccJerk.std.Z:
-- mean.fBodyGyro.std.X:
-- mean.fBodyGyro.std.Y:
-- mean.fBodyGyro.std.Z:
-- mean.fBodyAccMag.std:
-- mean.fBodyBodyAccJerkMag.std:
-- mean.fBodyBodyGyroMag.std:
-- mean.fBodyBodyGyroJerkMag.std":
+- mean.tBodyAcc.mean.X: Mean of the mean acceleration due to the body in the X direction over time for a given subject and activity
+- mean.tBodyAcc.mean.Y: Mean of the mean acceleration due to the body in the Y direction over time for a given subject and activity
+- mean.tBodyAcc.mean.Z: Mean of the mean acceleration due to the body in the Z direction over time for a given subject and activity
+- mean.tGravityAcc.mean.X: Mean of the mean acceleration due to gravity in the X direction over time for a given subject and activity
+- mean.tGravityAcc.mean.Y: Mean of the mean acceleration due to gravity in the Y direction over time for a given subject and activity
+- mean.tGravityAcc.mean.Z: Mean of the mean acceleration due to gravity in the Z direction over time  for a given subject and activity
+- mean.tBodyAccJerk.mean.X: Mean of the mean jerk due to the body in the X direction over time  for a given subject and activity
+- mean.tBodyAccJerk.mean.Y: Mean of the mean jerk due to the body in the Y direction over time for a given subject and activity
+- mean.tBodyAccJerk.mean.Z: Mean of the mean jerk due to the body in the Z direction over time for a given subject and activity
+- mean.tBodyGyro.mean.X: Mean of the mean angular acceleration due to the body in the X direction over time for a given subject and activity
+- mean.tBodyGyro.mean.Y: Mean of the mean angular acceleration due to the body in the Y direction over time for a given subject and activity
+- mean.tBodyGyro.mean.Z: Mean of the mean angular acceleration due to the body in the Z direction over time  for a given subject and activity
+- mean.tBodyGyroJerk.mean.X: Mean of the mean angular jerk due to the body in the X direction over time for a given subject and activity
+- mean.tBodyGyroJerk.mean.Y: Mean of the mean angular jerk due to the body in the Y direction over time for a given subject and activity
+- mean.tBodyGyroJerk.mean.Z: Mean of the mean angular jerk due to the body in the Z direction over time for a given subject and activity
+- mean.tBodyAccMag.mean: Mean of the mean magnitude of the acceleration vector due to the body over time for a given subject and activity
+- mean.tGravityAccMag.mean: Mean of the mean magnitude of the acceleration vector due to gravity over time for a given subject and activity
+- mean.tBodyAccJerkMag.mean: Mean of the mean magnitude of the jerk vector due to the body over time for a given subject and activity
+- mean.tBodyGyroMag.mean: Mean of the mean magnitude of the angular acceleration vector due to the body over time for a given subject and activity
+- mean.tBodyGyroJerkMag.mean: Mean of the mean magnitude of the angular jerk vector due to the body over time for a given subject and activity
+- mean.fBodyAcc.mean.X: Mean of the mean frequency determined from a FFT of the acceleration due to the body in the X direction for a given subject and activity
+- mean.fBodyAcc.mean.Y: Mean of the mean frequency determined from a FFT of the acceleration due to the body in the Y direction for a given subject and activity
+- mean.fBodyAcc.mean.Z: Mean of the mean frequency determined from a FFT of the acceleration due to the body in the Z direction for a given subject and activity
+- mean.fBodyAccJerk.mean.X: Mean of the mean frequency determined from a FFT of the jerk due to the body in the X direction for a given subject and activity
+- mean.fBodyAccJerk.mean.Y: Mean of the mean frequency determined from a FFT of the jerk due to the body in the Y direction for a given subject and activity
+- mean.fBodyAccJerk.mean.Z: Mean of the mean frequency determined from a FFT of the jerk due to the body in the Z direction for a given subject and activity
+- mean.fBodyGyro.mean.X: Mean of the mean frequency determined from a FFT of the angular acceleration due to the body in the X direction for a given subject and activity
+- mean.fBodyGyro.mean.Y: Mean of the mean frequency determined from a FFT of the angular acceleration due to the body in the Y direction for a given subject and activity
+- mean.fBodyGyro.mean.Z: Mean of the mean frequency determined from a FFT of the angular acceleration due to the body in the Z direction for a given subject and activity
+- mean.fBodyAccMag.mean: Mean of the mean frequency determined from a FFT of the magnitude of the acceleration vector due to the body for a given subject and activity
+- mean.fBodyBodyAccJerkMag.mean: Mean of the mean frequency determined from a FFT of the magnitude of the jerk vector due to the body for a given subject and activity
+- mean.fBodyBodyGyroMag.mean: Mean of the mean frequency determined from a FFT of the magnitude of the angular acceleration vector due to the body for a given subject and activity
+- mean.fBodyBodyGyroJerkMag.mean: Mean of the mean frequency determined from a FFT of the magnitude of the angular jerk due to the body for a given subject and activity
+- mean.tBodyAcc.std.X: Mean of the standard deviation of acceleration due to the body in the X direction over time for a given subject and activity
+- mean.tBodyAcc.std.Y: Mean of the standard deviation of acceleration due to the body in the Y direction over time for a given subject and activity
+- mean.tBodyAcc.std.Z: Mean of the standard deviation of the acceleration due to the body in the Z direction over time for a given subject and activity
+- mean.tGravityAcc.std.X: Mean of the standard deviation of the acceleration due to gravity in the X direction over time for a given subject and activity
+- mean.tGravityAcc.std.Y: Mean of the standard deviation of the acceleration due to gravity in the Y direction over time for a given subject and activity
+- mean.tGravityAcc.std.Z: Mean of the standard deviation of the acceleration due to gravity in the Z direction over time  for a given subject and activity
+- mean.tBodyAccJerk.std.X: Mean of the standard deviation of the jerk due to the body in the X direction over time  for a given subject and activity
+- mean.tBodyAccJerk.std.Y: Mean of the standard deviation of the jerk due to the body in the Y direction over time for a given subject and activity
+- mean.tBodyAccJerk.std.Z: Mean of the standard deviation of the jerk due to the body in the Z direction over time for a given subject and activity
+- mean.tBodyGyro.std.X: Mean of the standard deviation of the angular acceleration due to the body in the X direction over time for a given subject and activity
+- mean.tBodyGyro.std.Y: Mean of the standard deviation of the angular acceleration due to the body in the Y direction over time for a given subject and activity
+- mean.tBodyGyro.std.Z: Mean of the standard deviation of the angular acceleration due to the body in the Z direction over time  for a given subject and activity
+- mean.tBodyGyroJerk.std.X: Mean of the standard deviation of the angular jerk due to the body in the X direction over time for a given subject and activity
+- mean.tBodyGyroJerk.std.Y: Mean of the standard deviation of the angular jerk due to the body in the Y direction over time for a given subject and activity
+- mean.tBodyGyroJerk.std.Z: Mean of the standard deviation of the angular jerk due to the body in the Z direction over time for a given subject and activity
+- mean.tBodyAccMag.std: Mean of the standard deviation of the magnitude of the acceleration vector due to the body over time for a given subject and activity
+- mean.tGravityAccMag.std: Mean of the standard deviation of the magnitude of the acceleration vector due to gravity over time for a given subject and activity
+- mean.tBodyAccJerkMag.std: Mean of the standard deviation of the magnitude of the jerk vector due to the body over time for a given subject and activity
+- mean.tBodyGyroMag.std: Mean of the standard deviation of the magnitude of the angular acceleration vector due to the body over time for a given subject and activity
+- mean.tBodyGyroJerkMag.std: Mean of the standard deviation of the magnitude of the angular jerk vector due to the body over time for a given subject and activity
+- mean.fBodyAcc.std.X: Mean of the standard deviation of the frequency determined from a FFT of the acceleration due to the body in the X direction for a given subject and activity
+- mean.fBodyAcc.std.Y: Mean of the standard deviation of the frequency determined from a FFT of the acceleration due to the body in the Y direction for a given subject and activity
+- mean.fBodyAcc.std.Z: Mean of the standard deviation of the frequency determined from a FFT of the acceleration due to the body in the Z direction for a given subject and activity
+- mean.fBodyAccJerk.std.X: Mean of the standard deviation of the frequency determined from a FFT of the jerk due to the body in the X direction for a given subject and activity
+- mean.fBodyAccJerk.std.Y: Mean of the standard deviation of the frequency determined from a FFT of the jerk due to the body in the Y direction for a given subject and activity
+- mean.fBodyAccJerk.std.Z: Mean of the standard deviation of the frequency determined from a FFT of the jerk due to the body in the Z direction for a given subject and activity
+- mean.fBodyGyro.std.X: Mean of the standard deviation of the frequency determined from a FFT of the angular acceleration due to the body in the X direction for a given subject and activity
+- mean.fBodyGyro.std.Y: Mean of the standard deviation of the frequency determined from a FFT of the angular acceleration due to the body in the Y direction for a given subject and activity
+- mean.fBodyGyro.std.Z: Mean of the standard deviation of the frequency determined from a FFT of the angular acceleration due to the body in the Z direction for a given subject and activity
+- mean.fBodyAccMag.std: Mean of the standard deviation of the frequency determined from a FFT of the magnitude of the acceleration vector due to the body for a given subject and activity
+- mean.fBodyBodyAccJerkMag.std: Mean of the standard deviation of the frequency determined from a FFT of the magnitude of the jerk vector due to the body for a given subject and activity
+- mean.fBodyBodyGyroMag.std: Mean of the standard deviation of the frequency determined from a FFT of the magnitude of the angular acceleration vector due to the body for a given subject and activity
+- mean.fBodyBodyGyroJerkMag.std: Mean of the standard deviation of the frequency determined from a FFT of the magnitude of the angular jerk due to the body for a given subject and activity
