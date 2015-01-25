@@ -37,6 +37,7 @@ Please see [CodeBook.md](CodeBook.md) for a description of the data frames outpu
 
 The tidy data set uploaded for the project can be read into R using:
 
+`read.table("proj3_step5_data.txt", header=TRUE)`
 
 ## Notes on decisions made for the project
 
@@ -52,4 +53,14 @@ When naming the columns of the tidy data set produced in step 5, I have again ch
 
 In the [CodeBook.md](CodeBook.md), I did not include any units on the measurement since I could not find any documentation in the original data and did not want to speculate.
 
+# Steps followed to write data
+
+1. `source("run_analysis.R")`
+2. `output <- clean_UCI_HAR_dataset()`
+3. `dim(output$SummaryData)` : `[1] 180  68`
+4. `write.table(output$SummaryData, file="proj3_step5_data.txt", row.names=FALSE)`
+5. `test_write <- read.table("proj3_step5_data.txt", header=TRUE)`
+6. `dim(test_write)` : `[1] 180  68`
+
+Note: I confirmed that the script produced identical output by clearing my R session, reperforming the above steps, and diffing the .txt file outputs. 
 
