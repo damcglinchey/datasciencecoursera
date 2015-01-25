@@ -22,14 +22,32 @@ You should create one R script called run_analysis.R that does the following.
 
 ## How to use run_analysis.R
 
-load `run_analysis.R` using `source("run_analysis.R")`.
+To obtain the the tidy data sets, follow these steps:
 
-`run_analysis.R` contains a single function `clean_UCI_HAR_dataset()`. It optionally takes the directory containing the UCI HAR data and defaults to `UCI HAR Dataset/`.
-
-`clean_UCI_HAR_dataset()` returns a list containing 2 data frames labelled "FullData" and "SummaryData".
+1. Download the UCI HAR Dataset from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+2. Run `source("run_analysis.R")`
+3. Run `clean_UCI_HAR_dataset()`. If the unzipped data from step 1 is not present in your working data, pass the full path to the directory to the function. This is the only possible input pararameter.
+4. The function returns a list containing two data frames labeled "FullData" and "SummaryData" in that order.
 
 ## Description of output data frames
 
 Please see [CodeBook.md](CodeBook.md) for a description of the data frames output by `clean_UCI_HAR_dataset()`.
+
+## Reading in the tidy data containing the mean of each variable for each subject and activity
+
+The tidy data set uploaded for the project can be read into R using:
+
+
+## Notes on decisions made for the project
+
+Many of the decisions I made in how to execute this project were geared towards maintaining continuity between the input data set we were given and the cleaned and summarized output.
+
+In executing step 2 "Extracts only the measurements on the mean and standard deviation for each measurement", I chose to only include variables where the mean() and std() were taken, according to `features_info.txt`. Therefore, I have not included variables using `meanFreq()` or any of those used in the `angle()` variables (gravityMean, tBodyAccMean, tBodyAccJerkMean, tBodyGyroMean, tBodyGyroJerkMean). In the absense of any further input from the "client", I thought this would be a cleaner and clearer process.
+
+In executing step 3 "Uses descriptive activity names to name the activities in the data set", I have chosen to use the activity labels directly from `activity_labels.txt`. Again, I decided that this provided continuity between the data sets, and I found nothing lacking in the descriptiveness of the labels as given.
+
+In executing step 4 "Appropriately labels the data set with descriptive variable names", I have again tried to maintain continuity between the data sets. I have chosen to use the labels (almost) as given in `features.txt`. To conform to standards required for `select()`, I have replaced all `-` with `.` and removed the `()`. I think this maintains a balance between concise and descriptive column names. For instance, the leading "t" denotes time while the leading "f" denotes frequency, as described in `features_info.txt`. 
+
+When naming the columns of the tidy data set produced in step 5, I have again chosen to maintain internal consistency. Here, the only change made to the column names is to pre-pend "mean." to each of the columns of the full data set from step 4. The 2 exceptions are "SubjectID" and "Activity" which remain unchanged from the previous data table.
 
 
